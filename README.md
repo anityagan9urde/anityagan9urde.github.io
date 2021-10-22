@@ -1,4 +1,5 @@
-# [https://icons8.com/icon/26129/forward-button](https://anityagan9urde.github.io) : My personal portfolio website
+# My personal portfolio website  
+![](https://anityagan9urde.github.io) 
 > *Second portfolio website because the first one got boring*
 
 *Design template taken from html5up.net.*<br />
