@@ -2977,6 +2977,18 @@ input, select, textarea {
 	body.is-touch .poptrox-popup .closer {
 		opacity: 1.0 !important;
 	}
+.zoom {
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
 
 /* XLarge */
 
