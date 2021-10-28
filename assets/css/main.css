@@ -2702,8 +2702,8 @@ input, select, textarea {
 		  margin: 3px
 		}
 		.tag {background-color: #e7e7e7; border-radius: 2px}
-		.deployed {background-color: #obda51; color: #575757; border-radius: 2px}
-		.notebook {background-color: #d91818; color: #575757; border-radius: 2px}
+		.deployed {background-color: #50c878; color: #575757; border-radius: 2px}
+		.notebook {background-color: #d91818; color: black; border-radius: 2px}
 		.column {
 		  float: left;
 		  width: 25%;
