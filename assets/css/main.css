@@ -2703,7 +2703,7 @@ input, select, textarea {
 		}
 		.tag {background-color: #e7e7e7; border-radius: 2px}
 		.deployed {background-color: #50c878; color: #575757; border-radius: 2px}
-		.notebook {background-color: #ff4f00; color: #000000; border-radius: 2px}
+		.notebook {background-color: #f24d11; color: #2e2e2e; border-radius: 2px}
 		.column {
 		  float: left;
 		  width: 25%;
