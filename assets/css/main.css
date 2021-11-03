@@ -2260,10 +2260,10 @@ input, select, textarea {
 				width: 100%;
 			}
 		.image.zoom {
-                      transition: transform 0.6s;
+                      transition: transform 0.4s;
                        }
                         .zoom:hover {
-                                transform: scale(1.05);
+                                transform: scale(1.1);
                        }
 
 
@@ -2588,6 +2588,19 @@ input, select, textarea {
 			border-color: #49bf9d;
 			color: #49bf9d !important;
 		}
+		.button.button-shadow {
+		  transition: 0.3s;
+		}
+
+		.button-shadow:hover {
+		  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+		}
+		.button.button-zoom {
+                      transition: transform 0.4s;
+                       }
+                .button-zoom:hover {
+                      transform: scale(1.25);
+                       }
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
@@ -2702,11 +2715,19 @@ input, select, textarea {
 		  margin: 3px
 		}
 		.tag {background-color: #e7e7e7; border-radius: 2px}
-		.deployed {background-color: #50c878; color: #575757; border-radius: 2px}
-		.notebook {background-color: #f24d11; color: #2e2e2e; border-radius: 2px}
+		.deployed {background-color: #8780F9; color: #ffffff; border-radius: 2px}
+		.notebook {background-color: #F98780; color: #ffffff; border-radius: 2px}
+		.article {background-color: #F2F980; color: #575757; border-radius: 2px}
 		.column {
 		  float: left;
 		  width: 25%;
+		}
+	label.shadow {
+		  transition: 0.3s;
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
 /* The Modal (background) */
 		.modal {
@@ -2820,8 +2841,8 @@ input, select, textarea {
 		  transition: 0.3s;
 		}
 
-		.hover-shadow:hover {
-		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		.shadow:hover {
+		  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
 		}
 /* Header */
 
