@@ -2,5 +2,5 @@
 > *Second portfolio website because the first one got boring*
 
 *Design template taken from html5up.net.*<br />
-*Edited by me.*
+*Heavily edited by me.*
 
