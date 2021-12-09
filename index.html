@@ -11,25 +11,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		a:link {
-		  color: #494949;
-		  background-color: transparent;
-		  text-decoration: none;
-		}
-		a:visited {
-		  color: pink;
-		  background-color: transparent;
-		  text-decoration: none;
-		}
-		a:hover {
-		  color: #393939;
-		  background-color: transparent;
-		  text-decoration: underline;
-		}
-		a:active {
-		  color: yellow;
-		  background-color: transparent;
-		  text-decoration: underline;
+		#modal {
+		   position: absolute;
+		   z-index: 99;
+		   top: 25%;
+		   width: 400px;
+		   height: 300px;
+		   margin: auto;
+		   display: none;
 		}
 		</style>
 	</head>
@@ -76,7 +65,7 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://news-segmentation.herokuapp.com/"><img src="images/thumbs/newstm.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
 								<h3>NEWS Article Segmentation</h3>
-								<span class="label tag shadow">NLP</span><span class="label tag shadow">Flask</span><span class="label tag shadow">Python</span><span class="label tag shadow">LDA</span><span class="label deployed shadow">Deployed</span><br><br>
+								<span class="label tag shadow">NLP</span><span class="label tag shadow">Flask</span><span class="label tag shadow">Python</span><span class="label deployed shadow">Deployed</span><br><br>
 								<p>This is an NLP project which I'm doing under the INeuron Internship. This is still a work in progress and close to finishing.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
@@ -100,14 +89,14 @@
 									The models takes more number of features and gives a prediction.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://www.kaggle.com/anityagangurde/training-resnet34-on-gpu-99-41-accuracy"><img src="images/thumbs/fish.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
+								<a href="https://github.com/AnityaGan9urde/ResNet34-on-Fishes"><img src="images/thumbs/fish.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
 								<h3>Using ResNet34 on Fish Dataset</h3>
 								<span class="label tag shadow">ResNet-34</span><span class="label tag shadow">PyTorch</span><span class="label notebook shadow">Notebook</span><br><br>
 								<p>In this project, I used a pretrained ResNet34 model to train the Fish Dataset on, which was taken from Kaggle.
 									I achieved an accuracy of 99.70% within around 8 minutes.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://www.kaggle.com/anityagangurde/bank-customer-churn-prediction-xgboost-gpu/notebook"><img src="images/thumbs/bank.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
+								<a href="https://github.com/AnityaGan9urde/Bank-Customer-Analysis-and-Churn-Prediction"><img src="images/thumbs/bank.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
 								<h3>Banking Customer Churn Rate</h3>
 								<span class="label tag shadow">XG-Boost</span><span class="label tag shadow">EDA</span><span class="label tag shadow">Scikit-Learn</span><span class="label notebook shadow">Notebook</span><br><br>
 								<p>Banking Customer Churn Rate is a project in which the model determines whether customers will leave the bank given certain information about them.
@@ -116,7 +105,7 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="https://hr-analytics-will-someone-quit.herokuapp.com/"><img src="images/thumbs/hr1.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
 								<a href="https://github.com/AnityaGan9urde/HR-Analytics-Will-someone-quit"><h3>HR Analytics: Predict whether someone will quit</h3></a>
-								<span class="label tag">Python</span><span class="label tag shadow">Flask</span><span class="label tag shadow">SVM</span><span class="label deployed shadow">Deployed</span><br><br>
+								<span class="label tag">Python</span><span class="label tag shadow">Flask</span><span class="label tag shadow">SVM</span><span class="label deployed shadow">Deploy</span><span class="label deployed shadow">GitHub</span><br><br>
 								<p>This is a Flask api deployed on Heroku that uses Support Vector Machines with RBF to determine if someone will quit a job provided various information about that employee. I achieved an accuracy of around 77% during training for this model.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
@@ -269,6 +258,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
+			$("#button").click(function() {
+			   $("#modal").show();
+			}) 
+
+
 			function openModal() {
 			  document.getElementById("myModal").style.display = "block";
 			}
