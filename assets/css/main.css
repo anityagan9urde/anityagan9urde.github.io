@@ -2729,6 +2729,109 @@ input, select, textarea {
 		.hover-shadow:hover {
 		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		}
+/* Badges */
+		.ui-badge {
+ 			position:relative;
+ 			width:100%
+		}
+		.ui-badge:after {
+ 		display:block;
+ 		padding-top:112%;
+ 		content:""
+		}
+		.ui-badge .ui-badge-wrap {
+		 position:absolute;
+		 top:0;
+		 left:0;
+		 width:100%;
+		 height:100%
+		}
+		.ui-badge .has-shadow {
+		 filter:drop-shadow(0 3px 10px rgba(0,0,0,.3))
+		}
+		.ui-badge .badge-title {
+		 fill:#39424e;
+		 text-anchor:middle
+		}
+		.ui-badge .star {
+		 fill:#39424e
+		}
+		.ui-badge .star-count {
+		 text-anchor:end;
+		 fill:#39424e
+		}
+		.ui-badge .badge-title,
+		.ui-badge .star-count {
+		 font-weight:600;
+		 font-family:AvenirNext-Medium,Segoe UI,Ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif
+		}
+		.ui-badge .stars-wrap {
+		 position:absolute;
+		 display:flex;
+		 height:10%;
+		 align-items:center
+		}
+		.ui-badge .star-number-wrap {
+		 height:100%
+		}
+		.ui-badge .star-number {
+		 font-size:12px;
+		 fill:#39424e
+		}
+		.ui-badge.level-none .badge-icon,
+		.ui-badge.level-none .badge-title {
+		 opacity:.35
+		}
+		.ui-badge.level-none .badge-star {
+		 opacity:.15
+		}
+		.ui-badge.no-stars .hexagon {
+		 opacity:.4
+		}
+		.theme-m .ui-badge .badge-title {
+		 font-weight:700;
+		 font-family:OpenSans
+		}
+		.hacker-badges-v2 .hacker-badge {
+		    display: inline-block;
+		    margin-top: 5px;
+		    margin-right: 20px;
+		    width: 100px;
+		}
+		.ui-tooltip-wrapper {
+		    display: inline;
+		    width: 100%;
+		}
+		.hacker-badges-v2 {
+		    margin-top: 15px;
+		}
+		.section-card {
+		    box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+		    overflow-x: hidden;
+		    margin-bottom: 30px;
+		    padding: 30px;
+		    background-color: #fff;
+		}
+		.hacker-badges .section-card-content {
+		    margin: 15px 0 0 20px;
+		}
+		.section-card-heading {
+		    color: #0e141e;
+		    font-weight: 700;
+		    font-size: 18px;
+		    line-height: 1.4;
+		}
+		.section-card-icon {
+		    position: relative;
+		    top: -1px;
+		    margin: 5px 10px 0 0;
+		    color: #738f93;
+		    font-size: 18px;
+		}
+		.section-card-header {
+		    display: flex;
+		    margin-left: -5px;
+		}
 /* The Modal (background) */
 		.modal {
 		  display: none;
