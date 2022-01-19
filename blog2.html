@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+    Strata by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Anitya Gangurde Portfolio Website</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <img class="image avatar hover-shadow zoom" src="images/avatar.jpg" alt="" />
+                    <h1><strong>I am Anitya Gangurde</strong>, a self-taught pythonista and a Deep Learning Enthusiast<br />
+                    with interests in GANs and NLPs.</h1><br>
+                    <a href="Anitya_Gangurde_Resume.pdf" class="button button-shadow button-zoom" download>Download Resume</a>
+                </div>
+            </header>
+
+        <!-- Main -->
+
+            <div id="main">
+                 <!-- Navigation -->
+                    <div class="topnav">
+                        <a href="index.html">Home</a>
+                        <a href="aiml.html">AI & ML</a>
+                        <a href="analytics.html">Analytics</a>
+                        <a class="active" href="blogs.html">Blogs</a>
+                        <a href="certifications.html">Certifications</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <section id="three">
+                        <div>
+                            <a href="blogs.html">Back to Blogs</a><br>
+                            <b><h1>How Confusion Matrices are Useful in Machine Learing?</h1></b>
+                            <i><h3>
+                            Confusion matrices can be confusing as the name suggests but they can be in removing your during solving .
+                            </h3></i>
+                            <h4>May 26, 2021 · 5 min read</h4>
+
+                            <img src=”https://pixabay.com/users/chenspec-7784448/">
+                            <h3>
+                            Confusion matrices can be confusing as the name suggests but they can be in removing your during solving . A Confusion matrix is an N x N matrix where N are the number of target values for .
+                            </h3>
+                            <h3>
+                            It is a table layout that allows us to understand the of during . They are useful in having an overall about the classifications done by our model.
+                            </h3>
+                            <h3>
+                            The sub-classifications done by a confusion matrix can be further analyzed to determine various of such models. The matrix contains comparisons of actual values with the predicted values of the model.
+                            </h3>
+                            <h3>
+                            There are four sub-classifications on which a confusion matrix is defined and laid out:
+                            </h3>
+                            <h2>
+                            1. True Positives
+                            </h2>
+                            <h3>
+                            Consider there are two classes (a binary classification problem): One being Positive (or Correct or whatever you want it to be), other being Negative (or Incorrect or opposite of what you wanted it to be).
+                            </h3>
+                            <h3>
+                            True positives are the values which are correctly classified by our model as being in the right class. These are the values which were put in the right by our model.
+                            </h3>
+                            <blockquote>
+                                The patient was classified as being infected and they’re infected.
+                            </blockquote>
+                            <h2>
+                            2. True Negatives
+                            </h2>
+                            <h3>
+                            On the other hand, True Negatives are the values which were correctly classified as being in the second class of our . These are the values which were put in the right by our model but they were put in with a different .
+                            </h3>
+                            <h3>
+                            Negative in True Negatives doesn’t mean that the values were misclassified but they were put in the other than before. Hence, they are being correctly classified and are called ‘True’.
+                            </h3>
+                            <blockquote>
+                                …another patient was classified as not having an infection and they were not having an infection…
+                            </blockquote>
+                            <h2>
+                            3. False Positives
+                            </h2>
+                            <h3>
+                            Now, what if the values which were supposed to be put in the second box were actually put in box by our classifier. This is an error, more a Type I error, in which the negative values are misclassified as being positive.
+                            </h3>
+                            <blockquote>
+                                The model predicted a patient as having an infection but they were not having an infection and were fine. False Alarm.
+                            </blockquote>
+                            <h3>
+                            Such errors are not good but they are not completely because the misclassifications can be tested further to verify their actual class.
+                            </h3>
+                            <h2>
+                            4. False Negatives
+                            </h2>
+                            <h3>
+                            As with False Positives, False Negatives indicate the values which were misclassified. They show the values which were actually positive but were put in the negative box making a Type II error.
+                            </h3>
+                            <blockquote>
+                                The patient was infected but they were sent home as they were tested negative by the model. True alarm but not alarmed at all.
+                            </blockquote>
+                            <h3>
+                            Such errors can actually be lethal and dangerous. Probably most dangerous in the medical, banking or judicial fields.
+                            </h3>
+                            <h2>
+                            But what do we infer from this?
+                            </h2>
+                            <h3>
+                            We have various methods to analyze the performance of our model:
+                            </h3>
+                            <h2><br>
+                                Accuracy or Classification Accuracy:
+                            </h2>
+                            <h3>
+                            We can calculate of values which were correctly classified out of the total values which were given to our model. This is of our classifier.
+                            </h3>
+                            <h3>
+                            Accuracy tells us how well our model performed, but the limitation is that it requires the number of observations in each class to be around same.
+                            </h3>
+                            <h2>
+                                Precision
+                            </h2>
+                            <h3>
+                            Precision tells us that out of all the values put in the positive class by the model how many are actually positive. It tells us how precise our model was in classifying positive values.
+                            </h3>
+                            <h3>
+                            It tells how much we should trust on our model predictions. It is also known as Positive Predictive Value.
+                            </h3>
+                            <h2><br>
+                                Recall or Sensitivity:
+                            </h2>
+                            <h3>
+                            If you think about it False Negatives are actually positive values misclassified as being negative, hence False Negatives.
+                            </h3>
+                            <h3>
+                            We can use False Negatives and True Positives to determine how many positive values the model is able to recall from the total actual positive values given to it.
+                            </h3>
+                            <h3>
+                            Recall gives us a percentage of how sure the model is about the positive results. This is also known as the True Positive Rate.
+                            </h3>
+                            <h2><br>
+                                Specificity:
+                            </h2>
+                            <h3>
+                            This is similar to Recall but for the negatives. It gives a ratio of how many values were classified as negative to how many values were actually negative.
+                            </h3>
+                            <h3>
+                            Specificity gives us a percentage of how sure the model is about the negative results. This is also known as the True Negative Rate.
+                            </h3>
+                            <h2><br>
+                                F1 Score
+                            </h2>
+                            <h3>
+                            F1 Score is the harmonic mean of precision and recall. It varies from 0 to 1, where 1 indicates highest Precision and Recall possible and 0 indicates the lowest possible value.
+                            </h3>
+                            <h3>
+                            How to create a confusion Matrix in Python?
+                            </h3>
+                            <h3>
+                            We can use Scikit-Learn’s metrics method to import confusion matrix into our code. We can then pass our test values and our predicted values into the confusion_matrix() instance. The printed values will be a nested array containing four values which are TP, FN, FP and TN.
+                            </h3>
+                            <h3>
+                            <blockquote>
+                            from sklearn.metrics import confusion_matrix<br>
+                            confusion_matrix = confusion_matrix(y_test, y_pred)<br>
+                            print(confusion_matrix)<br>
+                            #prints [[TP FP]<br>
+                            #        [FN TN]]<br>
+                            </blockquote>
+                            </h3>
+                            <h3>
+                            Further we can use classification_report() to create a chart containing Precision, Recall and F1 score for analyzing the performance of our model.
+                            </h3>
+                            <h3>
+                            <blockquote>
+                            from sklearn.metrics import classification_report<br>
+                            classification_report = classification_report(y_test, y_pred)<br>
+                            print(classification_report)<br>
+                            #prints a table with columns: precision, recall, f1-score, support
+                            </blockquote>
+                            </h3>
+                            <h2>
+                            Conclusion
+                            </h2>
+                            <h3>
+                            So, we saw that how a simple structure of a confusion matrix can help us in determining so many aspects of the performance of our model and how you can practically implement it in your code in the future.
+                            </h3>
+                            <h3>
+
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li class="button-zoom"><a href="https://www.twitter.com/anitropy_42/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li class="button-zoom"><a href="https://www.linkedin.com/in/anityagan9urde/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li class="button-zoom"><a href="https://anityagan9urde.medium.com/" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+                        <li class="button-zoom"><a href="https://www.github.com/anityagan9urde/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Anitya Gangurde</li><li>Design: <a href="http://html5up.net/strata">HTML5 UP</a></li><li>Images: <a href="https://unsplash.com/">Unsplash</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>

@@ -10,23 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-		#modal {
-		   position: absolute;
-		   z-index: 99;
-		   top: 25%;
-		   width: 400px;
-		   height: 300px;
-		   margin: auto;
-		   display: none;
-		}
-		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<img class="image avatar hover-shadow zoom" src="images/avatar.jpg" alt="" />
+					<a href="index.html"><img class="image avatar hover-shadow zoom" src="images/avatar.jpg" alt="" /></a>
 					<h1><strong>I am Anitya Gangurde</strong>, a self-taught pythonista and a Deep Learning Enthusiast<br />
 					with interests in GANs and NLPs.</h1><br>
 					<a href="Anitya_Gangurde_Resume.pdf" class="button button-shadow button-zoom" download>Download Resume</a>
@@ -36,35 +25,23 @@
 		<!-- Main -->
 
 			<div id="main">
+				<!-- Navigation -->
+				<header>
+					<div class="topnav">
+					  	<a class="active" href="index.html">Home</a>
+						<a href="aiml.html">AI & ML</a>
+					  	<a href="analytics.html">Analytics</a>
+					  	<a href="blogs.html">Blogs</a>
+					  	<a href="certifications.html">Certifications</a>
+					  	<a href="contact.html">Contact</a>
+					</div>
+				</header>
 				<!-- One -->
-					<!-- <section id="navbar">
-						<header>
-						  <h2><a href="/badges">Badges </a></h2>
-						  <h2><a href="/anprojects">Analysis Projects</a></h2>
-						  <h2><a href="/mlprojects">ML Projects</a></h2>
-						  <h2><a href="/blogs">Blogs</a></h2>
-						  <h2><a href="/certs">Certifications</a></h2>
-						  <h2><a href="/contact">Contact</a></h2>
-						</header>
-					</section>
-					-->
 					<section id="one">
 						<header class="major">
 							<h2>Welcome to my portfolio website where you can find all my recent projects and certifications.</h2>
 						</header>
 						<p>Hello, I am Anitya. I like working with computers and using them to solve complex problems. That's why the field of Data Science is of particular interest to me as it combines both of these things, computers and critical problem-solving. Currently, I am still learning and understanding how all parts of data science come into play in the real world.</p>
-					<div class="inner" style="align-content: left;">
-					<h4>Following are some of my current skills 👇</h4>
-					<p>
-					▶️ Programming💻| Python<br />
-					▶️ Frameworks and Libraries🖼| Pandas • Numpy • Matplotlib • Scikit-Learn • Keras<br />
-					▶️ Data Analytics 💾 | MySQL • Microsoft Excel<br />
-					▶️ Vizz 📈 | Tableau • Power BI<br />
-					▶️ Web 🕸 | HTML • CSS<br />
-					▶️ Tech Stack 👨‍💻| Git • VSCode • PyCharm • Sublime Text • Jupyter • Google Collab<br />
-					▶️ Soft Skills 👬| Communication • Presentation • Flexibility<br />
-					▶️ Work ethics 👷‍♂️| Figure out • Work hard and smart • Perfectionism<br /></p>
-				</div>
 					</section>
 					<section class="hacker-badges" id="badges">
 						<header class="section-card-header">
@@ -133,210 +110,23 @@
 						<li><br><br><img class="zoom images" src="https://www.codewars.com/users/AGans01/badges/large"></li>
 						</ul>
 					</section>
-					<section>
-						<h2>Data Analysis Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/Covid-19-Analysis"><img src="images/thumbs/covid.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Covid-19 Analysis</h3>
-								<span class="label tag shadow">Pandas</span><span class="label tag shadow">Tableau</span><span class="label tag shadow">MS-Excel</span><span class="label notebook shadow">Jupyter Notebook</span><span class="label deployed shadow">DashBoard</span><br><br>
-								<p>This project involves manipulating dataset on <b>Excel</b> and creating <b>Tableau</b> dashboards for the same.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/CO2-Emissions-Analysis"><img src="images/thumbs/CO2.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>CO2 emissions all around the world</h3>
-								<span class="label tag shadow">Pandas</span><span class="label tag shadow">Tableau</span><span class="label tag shadow">MS-Excel</span><span class="label notebook shadow">Jupyter Notebook</span><span class="label deployed shadow">DashBoard</span><br><br>
-								<p>This project involves an analysis on World CO2 emissions from 1960 to 2011.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/Bank-Customer-Analysis-and-Churn-Prediction"><img src="images/thumbs/bank.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Banking Customer Churn Rate</h3>
-								<span class="label tag shadow">Pandas</span><span class="label tag shadow">Matplotlib</span><span class="label tag shadow">Seaborn</span><span class="label notebook shadow">Jupyter Notebook</span><br><br>
-								<p>Here, I performed extensive data cleaning and data wrangling tasks using Pandas. Did Exploratory Data Analysis using Matplolib and Seaborn to create charts and analyze the data in a Jupyter Notebook.
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/Census-2011-Analysis"><img src="images/thumbs/census.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Census-2011 Analysis</h3>
-								<span class="label tag shadow">MySQL</span><span class="label tag shadow">MS-Excel</span><span class="label deployed shadow">DashBoard</span><br><br>
-								<p>This project involves an analysis using <b>SQL</b> and <b>MS-Excel</b> on Census data of India for the year 2011.</p>
-							</article>
+					<section class="hacker-badges">
+						<div class="inner" style="align-content: left;">
+							<header class="section-card-header">
+							<svg viewBox="0 0 24 24" width="1.5em" height="1.5em" class="section-card-icon ui-svg-icon" fill="currentColor"><path d="M20 6h-3V5c0-1.6-1.3-3-2.9-3H10C8.4 2 7 3.3 7 4.9V6H4C2.4 6 1 7.3 1 8.9V19c0 1.6 1.3 3 2.9 3H20c1.6 0 3-1.3 3-2.9V9c0-1.6-1.3-3-2.9-3H20zM9 5c0-.5.4-1 .9-1H14c.5 0 1 .4 1 .9V6H9V5zm6 3v12H9V8h6zM3 19V9c0-.5.4-1 .9-1H7v12H4c-.5 0-1-.4-1-.9V19zm18 0c0 .5-.4 1-.9 1H17V8h3c.5 0 1 .4 1 .9V19z"></path></svg>
+							<h2>Skills</h2>
+							</header>
+							<p>
+							▶️ <strong>Programming💻</strong>| Python<br />
+							▶️ <strong>Frameworks and Libraries🖼</strong>| Pandas • Numpy • Matplotlib • Scikit-Learn • Keras<br />
+							▶️ <strong>Data Analytics 💾 </strong>| MySQL • Microsoft Excel<br />
+							▶️ <strong>Vizz 📈 </strong>| Tableau • Power BI<br />
+							▶️ <strong>Web 🕸 </strong>| HTML • CSS<br />
+							▶️ <strong>Tech Stack 👨‍💻</strong>| Git • VSCode • PyCharm • Sublime Text • Jupyter • Google Collab<br />
+							▶️ <strong>Soft Skills 👬</strong>| Communication • Presentation • Flexibility<br />
+							▶️ <strong>Work ethics 👷‍♂️</strong>| Figure out • Work hard and smart • Perfectionism<br /></p>
 						</div>
 					</section>
-
-				<!-- Two -->
-					<section id="two">
-						<h2>Machine Learning Projects</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://news-segmentation.herokuapp.com/"><img src="images/thumbs/newstm.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>NEWS Article Segmentation</h3>
-								<span class="label tag shadow">NLP</span><span class="label tag shadow">Flask</span><span class="label tag shadow">Python</span><span class="label deployed shadow">Deployed</span><br><br>
-								<p>This is an NLP project which I'm doing under the INeuron Internship. This is still a work in progress and close to finishing.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/Guitar-chord-detection"><img src="images/thumbs/guitar.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Guitar Chord Detection API</h3>
-								<span class="label tag shadow">Python</span><span class="label tag shadow">Librosa</span><span class="label tag shadow">Django</span><span class="label deployed shadow">In Progress</span><br><br>
-								<p>This project involves a Django app which detects guitar chords while live playing. This is still a work in progress.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://would-you-survive-titanic-2.herokuapp.com/"><img src="images/thumbs/titanic.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<a href="https://github.com/AnityaGan9urde/would-you-survive-titanic-2.0"><h3>Would You Survive the Titanic disaster [Version 2.0]</h3></a>
-								<span class="label tag shadow">Python</span><span class="label tag shadow">Flask</span><span class="label tag shadow">Scikit-Learn</span><span class="label deployed shadow">Deployed</span><br><br>
-								<p>Continuing the work of a previous Flask project, here I trained multiple models and included multiple features to get more accurate predictions.
-									The models takes more number of features and gives a prediction.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/ResNet34-on-Fishes"><img src="images/thumbs/fish.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Using ResNet34 on Fish Dataset</h3>
-								<span class="label tag shadow">ResNet-34</span><span class="label tag shadow">PyTorch</span><span class="label notebook shadow">Notebook</span><br><br>
-								<p>In this project, I used a pretrained ResNet34 model to train the Fish Dataset on, which was taken from Kaggle.
-									I achieved an accuracy of 99.70% within around 8 minutes.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/AnityaGan9urde/Bank-Customer-Analysis-and-Churn-Prediction"><img src="images/thumbs/bank.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<h3>Banking Customer Churn Rate</h3>
-								<span class="label tag shadow">Pandas</span><span class="label tag shadow">Matplotlib</span><span class="label tag shadow">Seaborn</span><span class="label notebook shadow">Notebook</span><br><br>
-								<p>Banking Customer Churn Rate is a project in which the model determines whether customers will leave the bank given certain information about them.
-									I trained an XGBoost model on this customer dataset using <b>cross-validation</b> and <b>hyper-tuned</b> it to achieve an accuracy of 85.4% as compared to 81% and 75% on normal <b>XGBoost</b> model and <b>Logistic Regression</b> respectively.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://hr-analytics-will-someone-quit.herokuapp.com/"><img src="images/thumbs/hr1.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<a href="https://github.com/AnityaGan9urde/HR-Analytics-Will-someone-quit"><h3>HR Analytics: Predict whether someone will quit</h3></a>
-								<span class="label tag">Python</span><span class="label tag shadow">Flask</span><span class="label tag shadow">SVM</span><span class="label deployed shadow">Deploy</span><span class="label deployed shadow">GitHub</span><br><br>
-								<p>This is a Flask api deployed on Heroku that uses Support Vector Machines with RBF to determine if someone will quit a job provided various information about that employee. I achieved an accuracy of around 77% during training for this model.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://would-you-survive-the-titanic.herokuapp.com/"><img src="images/thumbs/titanic.jpg" class="image fit zoom deploy hover-shadow" alt="" /></a>
-								<a href="https://github.com/AnityaGan9urde/Would-You-Survive-Titanic"><h3>Would You Survive the Titanic disaster?</h3></a>
-								<span class="label tag shadow">Python</span><span class="label tag shadow">Flask</span><span class="label deployed shadow">Deployed</span><br><br>
-								<p>The project is a Machine Learning api, deployed on Heroku, which implements Logistic Regression to predict whether you would survive the Titanic disaster. The api is made with Flask using python. The project includes a model to predict the survival given three inputs.</p>
-							</article>
-						</div>
-				<!-- Three -->
-					</section>
-					<section id="three">
-						<h2>Recent Blogs</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://becominghuman.ai/how-to-approach-any-data-science-problem-4c658443fda0" class="image fit zoom read hover-shadow"><img src="images/fulls/blog1.jpg" alt="" /></a>
-								<h3>How to approach any Data Science problem?</h3>
-								<span class="label tag shadow">Machine Learning</span><span class="label article shadow">Blog</span>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://medium.com/geekculture/how-confusion-matrices-are-useful-in-machine-learning-9893f88b0283" class="image fit zoom read hover-shadow"><img src="images/fulls/blog2.jpg" alt="" /></a>
-								<h3>How confusion matrices are useful in Machine Leaning?</h3>
-								<span class="label tag shadow">Machine Learning</span><span class="label tag shadow">Statistics</span><span class="label article shadow">Blog</span>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="https://anityagan9urde.medium.com/" class="button button-shadow button-zoom">View More On Medium</a></li>
-						</ul>
-					</section>
-				<!-- Four -->
-					<section id="four">
-						<h2>Certifications</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<img id="myImg" src="images/certs/sql_i.jpg" class="image fit thumb zoom hover-shadow cursor" alt="" onclick="openModal();currentSlide(6)" />
-								<a href="https://www.hackerrank.com/certificates/1b00188d4baa"><h3>SQL(Intermediate)</h3></a>
-								<p>Skill verification certificate from HackerRank.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img src="images/certs/02gans.jpg" class="image fit thumb zoom hover-shadow cursor" alt="PyTorch" onclick="openModal();currentSlide(1)" />
-								<a href="https://jovian.ai/certificate/MFQTKMZUGE"><h3>Deep Learning with Pytorch: Zero to GANs</h3></a>
-								<p>Certification for Deep Learning course using PyTorch framework with practical assignments and course projects.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img src="images/certs/int2nlp.jpg" class="image fit thumb zoom hover-shadow cursor" alt="NLP" onclick="openModal();currentSlide(2)" />
-								<a href="https://courses.analyticsvidhya.com/certificates/31l9lbjcex"><h3>Introduction to Natural Language Processing</h3></a>
-								<p>Certification for an NLP course introducing to basic concepts of NLP with a Twitter hate speech detection project.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img id="myImg" src="images/certs/pymlbc.jpg" class="image fit thumb zoom hover-shadow cursor" alt="ML Bootcamp" onclick="openModal();currentSlide(3)" />
-								<a href="https://ude.my/UC-2b07f57c-87bd-4687-a766-c37171dd0e1a"><h3>Python for Data Science and ML Bootcamp</h3></a>
-								<p>Certification for a course which introduces to Python libraries such as Pandas, Numpy, Matplotlib and ML libraries such as Scikit-learn.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img id="myImg" src="images/certs/pydev.jpg" class="image fit thumb zoom hover-shadow cursor" alt="Python" onclick="openModal();currentSlide(4)" />
-								<a href="https://ude.my/UC-76d210a8-8b02-4af3-90c8-5f2349d537aa"><h3>Complete Python Developer in 2020</h3></a>
-								<p>Certification for understanding basic to intermediate concepts of the Python language.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img id="myImg" src="images/certs/py.jpg" class="image fit thumb zoom hover-shadow cursor" alt="" onclick="openModal();currentSlide(5)" />
-								<a href="https://www.hackerrank.com/certificates/c42384242efe"><h3>Python(Basics)</h3></a>
-								<p>Skill verification certificate from HackerRank.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<img id="myImg" src="images/certs/sql.jpg" class="image fit thumb zoom hover-shadow cursor" alt="" onclick="openModal();currentSlide(6)" />
-								<a href="https://www.hackerrank.com/certificates/6bacf2a99123"><h3>SQL(Basics)</h3></a>
-								<p>Skill verification certificate from HackerRank.</p>
-							</article>
-						</div>
-						<div id="myModal" class="modal">
-						  <span class="close cursor" onclick="closeModal()">&times;</span>
-						  <div class="modal-content">
-
-						    <div class="mySlides">
-						      <div class="numbertext">1 / 6</div>
-						      <img src="images/certs/02gans.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <div class="mySlides">
-						      <div class="numbertext">2 / 6</div>
-						      <img src="images/certs/int2nlp.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <div class="mySlides">
-						      <div class="numbertext">3 / 6</div>
-						      <img src="images/certs/pymlbc.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <div class="mySlides">
-						      <div class="numbertext">4 / 6</div>
-						      <img src="images/certs/pydev.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <div class="mySlides">
-						      <div class="numbertext">5 / 6</div>
-						      <img src="images/certs/py.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <div class="mySlides">
-						      <div class="numbertext">6 / 6</div>
-						      <img src="images/certs/sql.jpg" style="width:100%; border-radius: 5px">
-						    </div>
-
-						    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-						  </div>
-						</div>
-
-					</section>
-
-				<!-- Five -->
-					<section id="five">
-						<h2>Get In Touch</h2>
-						<div class="row">
-							<div>
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Citizen of the Internet but currently located in Nashik, Maharashtra, India
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="mailto:anityagangurde01@gmail.com">anityagangurde01@gmail.com</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -360,49 +150,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-			$("#button").click(function() {
-			   $("#modal").show();
-			}) 
-
-
-			function openModal() {
-			  document.getElementById("myModal").style.display = "block";
-			}
-
-			function closeModal() {
-			  document.getElementById("myModal").style.display = "none";
-			}
-
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
-			  var dots = document.getElementsByClassName("demo");
-			  var captionText = document.getElementById("caption");
-			  if (n > slides.length) {slideIndex = 1}
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-			      slides[i].style.display = "none";
-			  }
-			  for (i = 0; i < dots.length; i++) {
-			      dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			  captionText.innerHTML = dots[slideIndex-1].alt;
-			}
-			</script>
-
 	</body>
 </html>

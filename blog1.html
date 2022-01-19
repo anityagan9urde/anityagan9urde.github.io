@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+    Strata by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Anitya Gangurde Portfolio Website</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <img class="image avatar hover-shadow zoom" src="images/avatar.jpg" alt="" />
+                    <h1><strong>I am Anitya Gangurde</strong>, a self-taught pythonista and a Deep Learning Enthusiast<br />
+                    with interests in GANs and NLPs.</h1><br>
+                    <a href="Anitya_Gangurde_Resume.pdf" class="button button-shadow button-zoom" download>Download Resume</a>
+                </div>
+            </header>
+
+        <!-- Main -->
+
+            <div id="main">
+                 <!-- Navigation -->
+                    <div class="topnav">
+                        <a href="index.html">Home</a>
+                        <a href="aiml.html">AI & ML</a>
+                        <a href="analytics.html">Analytics</a>
+                        <a class="active" href="blogs.html">Blogs</a>
+                        <a href="certifications.html">Certifications</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <section id="three">
+                        <div>
+                            <a href="blogs.html">Back to Blogs</a><br>
+                            <b><h1>How to approach any Data Science Problem?</h1></b>
+                            <i><h3>A Data Science problem can have multiple facets. From determining various features to understanding the gist of the dataset and implementing a model around it.
+                            </h3></i>
+                            <h4>Aug 3, 2021 · 6 min read</h4>
+
+                            <h3>
+                            I have created this guide which will make the Data Science process much simpler and systematic. I am also going to explain a practical example using our old and lovely Titanic dataset.
+                            </h3>
+                            <h3>
+                            Let us start by understanding the Titanic dataset because knowing what we are working with should be the first step to analyze anything.
+                            </h3>
+                            <h2>
+                            PART 1: Understanding The Dataset
+                            </h2>
+                            <h3>
+                            Below you can see the .csv file for the Titanic dataset.
+                            </h3>
+                            <h3>
+                            The first column is for PassengerID which is just an unique ID given to every passenger on the Titanic. Then next we have the Survived column which is a boolean, 0 meaning death,1 meaning that they lived. The Pclass column denotes what class did the passenger sit in going from 1 for first class, 2 for second and 3 for the third class passengers.
+                            </h3>
+                            <h3>
+                            The columns Name, Sex and Age are self-explanatory. The next column of Sibsp refers to the number of siblings or spouses aboard. Similarly, the column Parch means the number of parents or children aboard.
+                            </h3>
+                            <h3>
+                            The column Embarked tells the embarkation points from where the ship embarked from and took the passengers with it. So, C denotes Cherbourg, Q denotes Queenstown and S denotes Southampton. Finally, the column Ticket is the ticket number and column Cabin is the cabin number.
+                            </h3>
+                            <h3>
+                            So, what we have here is a mixed dataset with numerical as well as categorical values.
+                            </h3>
+
+                            <h2>
+                            PART 2: Data Cleaning
+                            </h2>
+                            <h3>
+                            Now that we have got the gist of the dataset we can move on with data cleaning or strategically removing useless columns, getting rid of any null values in the data and making the data more model friendly.
+                            </h3>
+                            <h3>
+                            We can see that while coming up with a model for training the data on, some features may not be that useful at all. Features such as PassengerID, Name, Ticket and Cabin would not contribute that much to the prediction of whether the person will survive or not.
+                            </h3>
+                            <h3>
+                            So, we will delete these columns from our dataset to make it simpler and less memory intensive for our model.
+                            </h3>
+                            <h3>
+                            Next, we can go deeper in understanding which features are actually numerical and which are just categorical. Just having a look at the rows within the dataset we can identify which features repeat their values and which are completely random.
+                            </h3>
+                            <h3>
+                            So, going through the dataset, features such as Age, SibSp, Parch and Fare have values which are not divided in classes. Hence, we can call them numerical features. Though the SibSp and Parch look categorical they have more of a discrete nature. Whereas, features like Survived, Pclass, Sex and Embarked are completely categorical in nature.
+                            </h3>
+                            <h3>
+                            Now, we have understood the data even more clearly and deeply. We can further delete the features which will not be affecting the survival rate in a logical sense. But we can’t always rely on our logic and that is when hypothesis testing comes into play.
+                            </h3>
+                            <h3>
+                            We can create some hypotheses like for example whether gender played any role in the survival of the person. And we can test this hypothesis by using various statistical techniques such as finding the p-value. After coming up with the results we can cancel the null hypothesis and accept the hypothesis which we considered.
+                            </h3>
+                            <h2>
+                            PART 3: Feature Engineering
+                            </h2>
+                            <h3>
+                            So, after differentiating between categorical and numerical features we will need to do some feature extraction and keep the features that will be the most useful. A data scientist’s domain knowledge about the data comes into play at this step.
+                            </h3>
+                            <h3>
+                            We can start with Exploratory Data Analysis or EDA to find patterns among the data and make visualizations. This will help us know how a particular feature affects some other feature and we will know which features are the most effective in predicting the target values.
+                            </h3>
+                            <h3>
+                            Here we can also create new features by combining two other features.
+                            </h3>
+                            <h3>
+                            Next, we will have to convert our categorical variables into dummy variables. This is important as the model will not understand these features as they are not numerical in nature. Hence, we will need to convert the categories into binary numbers.
+                            </h3>
+                            <h3>
+                            We can use Label encoding for features containing labels (eg. Embarked) and Ordinal encoding for categories having a ordered range (eg. Pclass). We will use these dummy variables to create our feature dataset to pass it in as input to our model.
+                            </h3>
+                            <h3>
+                            But before that we will remove all the columns which we think would not be useful in the feature dataset. We will also create a separate dataset for our target variables and remove it from the features.
+                            </h3>
+                            <h3>
+                            We now have a feature dataset and respective target values which can be used for further training.
+                            </h3>
+                            <h3>
+                            We will also split the dataset into training, validation and testing dataset right now before passing it into the model. This will be useful to get better results and tune our model to make it more rigid.
+                            </h3>
+                            <h2>
+                            PART 4: Selecting A Model, Training And Testing
+                            </h2>
+                            <h3>
+                            This part is the actual machine learning part where we select an appropriate model, train it on the data and then test it. We can select ML models such as SVM, Logistic Regression, etc.
+                            </h3>
+                            <h3>
+                            Each and every model will have some benefits and some downfalls. It is better to study which one will perform better or one can train multiple models and compare their results to select the one which performed better than the other.
+                            </h3>
+                            <h3>
+                            We will use our training data to train the model which contains our features and the targets. Depending on the machine algorithm we are using the model will use various tricks and learn weights to come up with a generalized solution.
+                            </h3>
+                            <h3>
+                            To test the validity of this solution we can use the test data to determine the accuracy and various other statistical metrics such as precision, recall and F1-score which will tell us how well the model has trained.
+                            </h3>
+                            <h2>
+                                Thus…
+                            </h2>
+                            <h3>
+                            This is how we can approach a Data Science problem and come up with a solution by following the above steps in order. Try implementing this guide with other datasets and I’m sure it will be helpful.
+                            </h3>
+                        </div>
+                    </section>
+            </div>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li class="button-zoom"><a href="https://www.twitter.com/anitropy_42/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li class="button-zoom"><a href="https://www.linkedin.com/in/anityagan9urde/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li class="button-zoom"><a href="https://anityagan9urde.medium.com/" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+                        <li class="button-zoom"><a href="https://www.github.com/anityagan9urde/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Anitya Gangurde</li><li>Design: <a href="http://html5up.net/strata">HTML5 UP</a></li><li>Images: <a href="https://unsplash.com/">Unsplash</a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>
