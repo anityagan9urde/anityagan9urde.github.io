@@ -243,34 +243,34 @@ input, select, textarea {
 	}
 
 /* Navbar */
-.topnav {
-  background-color: #474747;
-  overflow: hidden;
-  background-attachment: scroll, scroll;
-  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-}
+	.topnav {
+	  background-color: #474747;
+	  overflow: hidden;
+	  background-attachment: scroll, scroll;
+	  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+	}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+	/* Style the links inside the navigation bar */
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+	/* Change the color of links on hover */
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #49bf9d;
-  color: white;
-}
+	/* Add a color to the active/current link */
+	.topnav a.active {
+	  background-color: #49bf9d;
+	  color: white;
+	}
 
 /* Container */
 
