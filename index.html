@@ -11,6 +11,58 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+	<style>
+		body {
+		  margin: 0;
+		  font-size: 28px;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.header {
+		  background-color: #f1f1f1;
+		  padding: 30px;
+		  text-align: center;
+		}
+
+		#navbar {
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		#navbar a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		#navbar a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		#navbar a.active {
+		  background-color: #04AA6D;
+		  color: white;
+		}
+
+		.content {
+		  padding: 16px;
+		}
+
+		.sticky {
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+
+		.sticky + .content {
+		  padding-top: 60px;
+		}
+	</style>
 	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
@@ -26,12 +78,12 @@
 				<!-- Navigation -->
 				<header>
 					<div class="topnav">
-					  	<a class="active" href="index.html">Home</a>
-						<a href="aiml.html">AI & ML</a>
-					  	<a href="analytics.html">Analytics</a>
-					  	<a href="blogs.html">Blogs</a>
-					  	<a href="certifications.html">Certifications</a>
-					  	<a href="contact.html">Get In Touch</a>
+					  	<a href="#">Home</a>
+						<a href="#aiml">AI & ML</a>
+					  	<a href="#analytics">Analytics</a>
+					  	<a href="#blogs">Blogs</a>
+					  	<a href="#certifications">Certifications</a>
+					  	<a href="#contacts">Get In Touch</a>
 					</div>
 				</header>
 				<!-- One -->
@@ -329,5 +381,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				window.onscroll = function() {myFunction()};
+				var navbar = document.getElementById("navbar");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
 	</body>
 </html>
