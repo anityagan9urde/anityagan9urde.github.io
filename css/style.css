@@ -111,67 +111,7 @@ dd {
 
 blockquote {
   margin: 0 0 1rem; }
-/* Fix Navbar Toggle on Mobile */
-.navbar-toggler {
-    border: none;
-    outline: none;
-}
 
-.navbar-nav {
-    text-align: center;
-}
-
-.navbar-collapse {
-    background: white;
-    padding: 10px;
-}
-
-/* Make Images Responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Fix Section Spacing on Mobile */
-@media (max-width: 768px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .navbar-nav {
-        text-align: left;
-    }
-}
-
-/* Owl Carousel Responsive Fixes */
-.owl-carousel .slider-item {
-    max-width: 100%;
-    text-align: center;
-}
-
-.owl-carousel .slider-item img {
-    width: 100%;
-    height: auto;
-}
-
-/* Fix Tables on Mobile */
-@media (max-width: 768px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-}
-
-/* Button Adjustments for Mobile */
-.btn {
-    padding: 10px 15px;
-    font-size: 14px;
-}
 b,
 strong {
   font-weight: bolder; }
