@@ -21,6 +21,335 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Fix table text colors in resume-wrap for dark theme */
+      .resume-wrap .table {
+        color: #ffffff !important;
+        background: transparent !important;
+      }
+      .resume-wrap .table td,
+      .resume-wrap .table th {
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+        background: transparent !important;
+      }
+      .resume-wrap .table thead th {
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+      }
+      .resume-wrap .table tbody tr {
+        background: transparent !important;
+      }
+      .resume-wrap .table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.05) !important;
+      }
+      .resume-wrap .table p {
+        color: #ffffff !important;
+      }
+      .resume-wrap .table h2 {
+        color: #ffffff !important;
+      }
+      .resume-wrap .table b {
+        color: #ffbd39 !important;
+      }
+      
+      /* Mobile Responsive Styles */
+      @media (max-width: 768px) {
+        /* Container centering fixes */
+        .container {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        
+        /* Navbar/Header fixes */
+        .navbar-nav {
+          background: rgba(0, 0, 0, 0.95) !important;
+          padding: 1rem !important;
+          margin-top: 1rem;
+          border-radius: 5px;
+        }
+        .navbar-nav .nav-link {
+          padding: 0.75rem 1rem !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          color: #fff !important;
+        }
+        .navbar-nav .nav-link:last-child {
+          border-bottom: none;
+        }
+        .navbar-toggler {
+          border-color: rgba(255, 255, 255, 0.3) !important;
+          padding: 0.5rem 0.75rem !important;
+        }
+        .navbar-toggler .oi-menu,
+        .navbar-toggler span {
+          color: #fff !important;
+        }
+        .navbar-toggler:focus {
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba(255, 189, 57, 0.25);
+        }
+        
+        /* Hero section adjustments */
+        .hero .slider-text {
+          text-align: center !important;
+        }
+        .hero .slider-text .row {
+          justify-content: center !important;
+          align-items: center !important;
+          flex-direction: column-reverse !important;
+        }
+        .hero .slider-text .row > div:first-child {
+          width: 100% !important;
+          text-align: center !important;
+          margin-top: 2rem;
+          padding: 0 1rem !important;
+        }
+        .hero .slider-text .one-forth {
+          width: 100% !important;
+          position: relative !important;
+          padding: 2rem 1rem !important;
+          text-align: center !important;
+        }
+        .hero .slider-text .one-forth .text {
+          position: relative !important;
+          transform: none !important;
+          max-width: 100% !important;
+          padding: 0 !important;
+          left: auto !important;
+          right: auto !important;
+        }
+        .hero h1 {
+          font-size: 2rem !important;
+          text-align: center !important;
+        }
+        .hero h2 {
+          font-size: 1.5rem !important;
+          text-align: center !important;
+        }
+        .hero .btn {
+          padding: 0.75rem 1.5rem !important;
+          font-size: 0.9rem !important;
+          margin: 0.5rem auto !important;
+          display: inline-block;
+          width: auto;
+          max-width: 100%;
+        }
+        .hero .slider-text img {
+          margin: 0 auto !important;
+          display: block !important;
+          max-width: 90% !important;
+        }
+        
+        /* Section headings */
+        h1.big {
+          font-size: 3rem !important;
+        }
+        h2.mb-4 {
+          font-size: 1.75rem !important;
+        }
+        
+        /* Ensure all sections are properly centered */
+        .ftco-section .container {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        .ftco-section .row {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .ftco-section .col-md-6,
+        .ftco-section .col-md-10,
+        .ftco-section .col-md-12 {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        
+        /* Table improvements */
+        .table-responsive {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+        .resume-wrap {
+          padding: 1.5rem !important;
+        }
+        .table td, .table th {
+          padding: 0.75rem 0.5rem !important;
+          font-size: 0.9rem;
+        }
+        .table h2 {
+          font-size: 1.25rem !important;
+        }
+        
+        /* Image containers */
+        .img-fluid {
+          width: 100%;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+        
+        /* Persona cards - stack on mobile */
+        .col-md-4 {
+          margin-bottom: 2rem;
+        }
+        
+        /* Text content */
+        p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+        
+        /* Section spacing */
+        .ftco-section {
+          padding: 3rem 0 !important;
+        }
+        
+        /* Button spacing */
+        .btn-primary, .btn-white {
+          margin: 0.25rem 0 !important;
+        }
+        
+        /* Footer fixes */
+        .ftco-footer {
+          padding: 3rem 0 1rem !important;
+        }
+        .ftco-footer .ftco-footer-widget {
+          margin-bottom: 2rem !important;
+          text-align: center !important;
+        }
+        .ftco-footer .ftco-footer-widget.ml-md-4 {
+          margin-left: 0 !important;
+        }
+        .ftco-footer .col-md {
+          margin-bottom: 2rem;
+          text-align: center !important;
+        }
+        .ftco-footer .col-md ul {
+          display: inline-block;
+          text-align: left;
+        }
+        .ftco-footer-social {
+          text-align: center !important;
+          float: none !important;
+        }
+        .ftco-footer-social li {
+          display: inline-block;
+          margin: 0 0.5rem;
+        }
+        .ftco-footer .block-23 {
+          text-align: center !important;
+        }
+        .ftco-footer .block-23 ul {
+          text-align: center !important;
+          display: inline-block;
+        }
+        .ftco-footer .block-23 ul li {
+          padding-left: 0 !important;
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .ftco-footer .block-23 ul li .icon,
+        .ftco-footer .block-23 ul li .text {
+          display: inline-block !important;
+          vertical-align: middle !important;
+        }
+        .ftco-footer .block-23 ul li .icon {
+          width: auto !important;
+          margin-right: 0.5rem !important;
+          padding-top: 0 !important;
+        }
+        .ftco-footer .text-center {
+          text-align: center !important;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        /* Extra small devices */
+        h1.big {
+          font-size: 2rem !important;
+        }
+        h2.mb-4 {
+          font-size: 1.5rem !important;
+        }
+        .resume-wrap {
+          padding: 1rem !important;
+        }
+        .table td, .table th {
+          font-size: 0.85rem;
+          padding: 0.5rem 0.25rem !important;
+        }
+        .table h2 {
+          font-size: 1.1rem !important;
+        }
+        .ftco-footer .col-md {
+          text-align: center !important;
+        }
+        .ftco-footer .block-23 ul li {
+          padding-left: 0 !important;
+          display: block !important;
+        }
+        .ftco-footer .block-23 ul li .icon,
+        .ftco-footer .block-23 ul li .text {
+          display: inline-block !important;
+          vertical-align: middle !important;
+        }
+        .ftco-footer .block-23 ul li .icon {
+          width: auto !important;
+          margin-right: 0.5rem !important;
+          padding-top: 0 !important;
+        }
+      }
+      
+      
+      /* Desktop: Fix hero section layout - image on right, text on left */
+      @media (min-width: 992px) {
+        .hero .slider-text .row {
+          justify-content: flex-start !important;
+          align-items: center !important;
+        }
+        .hero .slider-text .row > div:first-child {
+          width: 50% !important;
+          order: 2;
+          text-align: right;
+          padding-right: 3rem;
+          margin-left: auto;
+        }
+        .hero .slider-text .row > div:first-child img {
+          max-width: 100%;
+          height: auto;
+        }
+        .hero .slider-text .one-forth {
+          width: 50% !important;
+          order: 1;
+          position: relative !important;
+          left: auto !important;
+          right: auto !important;
+          top: auto !important;
+          bottom: auto !important;
+          margin: 0 !important;
+          padding-left: 3rem;
+        }
+        .hero .slider-text .one-forth .text {
+          position: relative !important;
+          left: auto !important;
+          right: auto !important;
+          top: auto !important;
+          transform: none !important;
+          max-width: 100% !important;
+          padding-left: 0 !important;
+          padding-right: 2rem !important;
+        }
+      }
+      
+      /* Ensure all images are responsive */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -28,9 +357,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="prod_index.html">A.G.</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> <span class="ml-2">Menu</span>
+      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
@@ -51,10 +380,10 @@
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
 	          	<div>
-	          		<img src="images/LabCap_showcase.png" width = "1100" height = "700" align="right">
+	          		<img src="images/LabCap_showcase.png" class="img-fluid" style="max-width: 100%; height: auto;">
 	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '150%' }">
-		          	<div class="text">
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '150%' }">
+		          	<div class="text w-100">
 			            <h1 class="mb-4 mt-3">Introducing <span>LabCap</span></h1>
 			            <h2 class="mb-4">Crowdsourcing for your research.</h2>
 			            <p><a href="#solution-section" class="btn btn-primary py-3 px-4">Take a Demo</a> <a href="#intro-section" class="btn btn-white btn-outline-white py-3 px-4">Read Summary</a></p>
@@ -127,7 +456,8 @@
 		    				<div class="resume-wrap ftco-animate">
 		    					<span class="date">Market Challenges & Opportunities</span>
 		    					
-		    					<table>
+		    					<div class="table-responsive">
+		    						<table class="table">
 		    							<thead>
 		    								<tr>
 		    									<td><h2></h2></td>
@@ -136,7 +466,7 @@
 		    							<tbody>
 		    								<tr>
 		    									<td><p>
-		    									There’s no other service out there is trying to make science funding more streamlined and bringing science out of the research institutes and into the world.</p></td>
+		    									There's no other service out there is trying to make science funding more streamlined and bringing science out of the research institutes and into the world.</p></td>
 		    								</tr>
 		    								<tr>
 		    									<td><p>
@@ -147,8 +477,9 @@
 		    									There have been a lot of funding cuts to science (in many cases necessary as the money is diverted elsewhere important) but science should never be stopped if we want to keep on improving the planet and lives of humans on that planet.</p></td>
 		    								</tr>
 		    							</tbody>
-		    						
-		    					</table>
+		    							
+		    						</table>
+		    					</div>
 
 		    				</div>
 		    			</div>
@@ -158,7 +489,8 @@
 		    				<div class="resume-wrap ftco-animate">
 		    					<span class="date">Competitor Analysis</span>
 		    					
-		    					<table>
+		    					<div class="table-responsive">
+		    						<table class="table">
 		    							<thead>
 		    								<tr>
 		    									<td><h2>Experiment.com</h2></td>
@@ -178,8 +510,9 @@
 		    									Charges 11-13% in fees (8% platform fees & 3-5% payment processing)</p></td>
 		    								</tr>
 		    							</tbody>
-		    						
-		    					</table>
+		    							
+		    						</table>
+		    					</div>
 
 		    				</div>
 		    			</div>
@@ -189,7 +522,8 @@
 		    				<div class="resume-wrap ftco-animate">
 		    					<span class="date">Unique Selling Proposition (USPs)</span>
 		    					
-		    					<table>
+		    					<div class="table-responsive">
+		    						<table class="table">
 		    							<thead>
 		    								<tr>
 		    									<td><h2>The beauty is more in the backend</h2></td>
@@ -209,8 +543,9 @@
 		    									-> A place where science becomes more liberated and democratized.</p></td>
 		    								</tr>
 		    							</tbody>
-		    						
-		    					</table>
+		    							
+		    						</table>
+		    					</div>
 
 		    				</div>
 		    			</div>
@@ -220,7 +555,8 @@
 		    				<div class="resume-wrap ftco-animate">
 		    					<span class="date">Target Audience Insights</span>
 		    					
-		    					<table>
+		    					<div class="table-responsive">
+		    						<table class="table">
 		    							<thead>
 		    								<tr>
 		    									<td><h2>Target Audience 1: Researchers</h2></td>
@@ -242,12 +578,13 @@
 		    									<td><p>
 		    									-> A science enthusiast.<br>
 													-> Has extra money to spend.<br>
-													-> Couldn’t find a streamlined way to fund scientific endeavours.
+													-> Couldn't find a streamlined way to fund scientific endeavours.
 													</p></td>
 		    								</tr>
 		    							</tbody>
-		    						
-		    					</table>
+		    							
+		    						</table>
+		    					</div>
 
 		    				</div>
 		    			</div>
@@ -342,7 +679,8 @@
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Ideation</span>
     					
-    					<table>
+    					<div class="table-responsive">
+    						<table class="table">
     							<thead>
     								<tr>
     									<td><h2>Problem</h2></td>
@@ -363,22 +701,25 @@
     									<td><p>Platform that allows researchers to showcase their research problems on a page where potential collaborators or sponsorer can see it.</p></td>
     								</tr>
     							</tbody>
-    						
-    					</table>
+    							
+    						</table>
+    					</div>
     				</div>
     				<br>
     				<br>
 		            <h2 class="mb-4">User Journey</h2>
-	    					<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(../images/UserJourney1.png);"></div>
-	    					<img  class="img align-self-stretch" src="images/UserJourney2.png" width = "1200" height = "800">
+	    					<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(../images/UserJourney1.png); min-height: 300px; background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+	    					<img  class="img align-self-stretch img-fluid" src="images/UserJourney2.png" style="max-width: 100%; height: auto;">
 
 		        <br>
     				<br>
 		            <h2 class="mb-4">Wireframes</h2>
-		            <img  class="img align-self-stretch" src="images/wireframe_1.png" width = "1200" height = "450"><br><br>
-			    <img  class="img align-self-stretch" src="images/wireframe_2.png" width = "1200" height = "450"><br><br>
+		            <img  class="img align-self-stretch img-fluid" src="images/wireframe_1.png" style="max-width: 100%; height: auto;"><br><br>
+			    <img  class="img align-self-stretch img-fluid" src="images/wireframe_2.png" style="max-width: 100%; height: auto;"><br><br>
 		            <h2 class="mb-4">High Fidelity Prototype</h2>
-				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="800" src="https://www.figma.com/proto/SN5kZZykoIwKdu4dSvmyID/Research_Fund?node-id=9-38&t=sPQMFEQLqccoeOQG-1&scaling=scale-down&content-scaling=fixed&device-frame=0" allowfullscreen></iframe>    		</div>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/proto/SN5kZZykoIwKdu4dSvmyID/Research_Fund?node-id=9-38&t=sPQMFEQLqccoeOQG-1&scaling=scale-down&content-scaling=fixed&device-frame=0" allowfullscreen></iframe>
+				</div>    		</div>
     	</div>
     </section>
 
@@ -390,7 +731,7 @@
             <h2 class="mb-4">Development</h2>
             <p>A plan to get the MVP developed as quickly as possible.</p>
           </div>
-          <img  class="img align-self-stretch" src="images/labcap_roadmap.png" width = "1100" height = "375">
+          <img  class="img align-self-stretch img-fluid" src="images/labcap_roadmap.png" style="max-width: 100%; height: auto;">
 
 	        </div>
 	        <center>
@@ -399,7 +740,8 @@
 	    				<div class="resume-wrap ftco-animate">
 	    					<span class="date">MVP Features</span>
 	    					
-	    					<table>
+	    					<div class="table-responsive">
+	    						<table class="table">
 	    							<thead>
 	    								<tr>
 	    									<td><h2>Feature</h2></td>
@@ -484,8 +826,9 @@
 	    									<td><p>10</p></td>
 	    								</tr>
 	    							</tbody>
-	    						
-	    					</table>
+	    							
+	    						</table>
+	    					</div>
 
 	    				</div>
 	    			</div>
@@ -496,7 +839,8 @@
 		    				<div class="resume-wrap ftco-animate">
 		    					<span class="date">Technology required</span>
 		    					
-		    					<table>
+		    					<div class="table-responsive">
+		    						<table class="table">
 		    							<thead>
 		    								<tr>
 		    									<td><h2>Tech Stack for Development</h2></td>
@@ -520,8 +864,9 @@
 		    									AWS: AWS provides a lot of flexibility while scaling as well as AWS has a lot of applications for cloud that will help us better deploy our services. From security to APIs to ML processing to storage everything can to handled by AWS.</p></td>
 		    								</tr>
 		    							</tbody>
-		    						
-		    					</table>
+		    							
+		    						</table>
+		    					</div>
 
 		    				</div>
 		    			</div>
@@ -544,7 +889,8 @@
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Marketing and User Acquisition Strategy</span>
     					
-    					<table>
+    					<div class="table-responsive">
+    						<table class="table">
     							<thead>
     								<tr>
     									<td><h2></h2></td>
@@ -569,8 +915,9 @@
 											</p></td>
     								</tr>
     							</tbody>
-    						
-    					</table>
+    							
+    						</table>
+    					</div>
     				</div>
     			</div>
     		</div>
@@ -579,7 +926,8 @@
     				<div class="resume-wrap ftco-animate">
     					<span class="date">Monetization</span>
     					
-    					<table>
+    					<div class="table-responsive">
+    						<table class="table">
     							<thead>
     								<tr>
     									<td><h2>Premium version and other ways</h2></td>
@@ -598,8 +946,9 @@
     									> Make researches more visible with paid version.</p></td>
     								</tr>
     							</tbody>
-    						
-    					</table>
+    							
+    						</table>
+    					</div>
     				</div>
     			</div>
     		</div>
