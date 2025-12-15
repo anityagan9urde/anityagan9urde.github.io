@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LabCap – Crowdfunded Science for Researchers & Funders</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Re‑use product case‑study stack -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      /* Page-level look & feel: light, clean, orange-accent theme */
+      body {
+        background: #f9fafb;
+        color: #111827;
+      }
+
+      .labcap-gradient {
+        background:
+          linear-gradient(180deg, rgba(251, 146, 60, 0.16) 0%, rgba(254, 215, 170, 0.24) 35%, #ffffff 75%, #ffffff 100%);
+      }
+
+      .navbar-brand span {
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      /* Make navbar text dark with orange hover */
+      #ftco-navbar .navbar-brand {
+        color: #111827;
+      }
+      #ftco-navbar .navbar-brand:hover {
+        color: #f97316;
+      }
+      #ftco-navbar .navbar-nav > .nav-item > .nav-link {
+        color: #111827 !important;
+      }
+      #ftco-navbar .navbar-nav > .nav-item > .nav-link.active,
+      #ftco-navbar .navbar-nav > .nav-item > .nav-link:hover {
+        color: #f97316 !important;
+      }
+
+      .hero-labcap {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+      }
+
+      .hero-labcap .badge-pill {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 999px;
+        padding: 0.45rem 1rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #9a3412;
+        border: 1px solid rgba(248, 171, 95, 0.9);
+      }
+
+      .hero-labcap h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #111827;
+      }
+
+      @media (min-width: 992px) {
+        .hero-labcap h1 {
+          font-size: 3.6rem;
+        }
+      }
+
+      .hero-labcap .subheadline {
+        font-size: 1.1rem;
+        color: #374151;
+        max-width: 520px;
+      }
+
+      .hero-highlight {
+        background: linear-gradient(120deg, #fb923c, #f97316);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 2rem;
+        border: 1px solid rgba(226, 232, 240, 0.9);
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .hero-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 22px 60px rgba(15, 23, 42, 0.24);
+      }
+
+      .hero-card small,
+      .hero-card p {
+        color: #4b5563;
+      }
+
+      .hero-metric {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #111827;
+      }
+
+      .hero-metric-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #6b7280;
+      }
+
+      .hero-progress-label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #6b7280;
+      }
+
+      .btn-pill {
+        border-radius: 999px !important;
+        padding-left: 1.6rem !important;
+        padding-right: 1.6rem !important;
+        font-weight: 500;
+      }
+
+      .btn-primary {
+        background: #f97316;
+        border-color: #f97316;
+      }
+
+      .btn-primary:hover,
+      .btn-primary:focus {
+        background: #ea580c;
+        border-color: #ea580c;
+      }
+
+      .btn-glass {
+        background: rgba(15, 23, 42, 0.02);
+        border: 1px solid rgba(248, 171, 95, 0.55);
+        color: #f97316;
+      }
+
+      .btn-glass:hover {
+        background: rgba(15, 23, 42, 1);
+        color: #f9fafb;
+      }
+
+      /* Section scaffolding */
+      .section-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: #fed7aa;
+        margin-bottom: 0.5rem;
+      }
+
+      .section-title {
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: #111827;
+      }
+
+      .section-subtitle {
+        max-width: 620px;
+        margin: 0 auto;
+        color: #9ca3af;
+      }
+
+      /* Feature cards */
+      .feature-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 1.75rem 1.6rem;
+        border: 1px solid rgba(229, 231, 235, 0.9);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feature-card:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        border: 1px solid transparent;
+        background: linear-gradient(135deg, rgba(251, 146, 60, 0.4), rgba(248, 171, 95, 0.15))
+          border-box;
+        -webkit-mask:
+          linear-gradient(#000 0 0) padding-box,
+          linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+      }
+
+      .feature-card:hover:before {
+        opacity: 1;
+      }
+
+      .feature-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff7ed;
+        border: 1px solid rgba(248, 171, 95, 0.9);
+        color: #9a3412;
+        margin-bottom: 1rem;
+      }
+
+      .feature-tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.15rem 0.7rem;
+        border-radius: 999px;
+        background: #fff7ed;
+        border: 1px solid rgba(248, 171, 95, 0.9);
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #9a3412;
+      }
+
+      /* Split sections */
+      .pill-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .pill-list li {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.9rem;
+        border-radius: 999px;
+        background: #fff7ed;
+        border: 1px solid rgba(248, 171, 95, 0.8);
+        color: #9a3412;
+        font-size: 0.8rem;
+        margin: 0.25rem;
+      }
+
+      /* Timeline / How it works */
+      .step {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .step-index {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        background: #f97316;
+        border: 1px solid #ea580c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+      }
+
+      /* Three-step overview cards */
+      .step-card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .step-card-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f97316;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.9rem;
+        box-shadow: 0 8px 20px rgba(249, 115, 22, 0.45);
+      }
+
+      .step-progress {
+        margin-top: 1.25rem;
+        height: 4px;
+        background: #e5e7eb;
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .step-progress-bar {
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, #22c55e, #4ade80);
+        border-radius: 999px;
+      }
+
+      /* Testimonials / social proof */
+      .quote-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 1.75rem;
+        border: 1px solid rgba(229, 231, 235, 0.9);
+        height: 100%;
+      }
+
+      .quote-badge {
+        font-size: 0.7rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #fed7aa;
+      }
+
+      /* CTA section */
+      .cta-band {
+        border-radius: 24px;
+        padding: 2.2rem 2rem;
+        background:
+          radial-gradient(circle at top right, rgba(251, 146, 60, 0.4), transparent 55%),
+          radial-gradient(circle at bottom left, rgba(248, 171, 95, 0.35), transparent 55%),
+          #111827;
+        border: 1px solid rgba(248, 171, 95, 0.9);
+      }
+
+      /* Ensure CTA section sits above page and is clickable */
+      .ftco-hireme {
+        position: relative;
+        z-index: 0 !important;
+      }
+
+      /* Mobile tweaks */
+      @media (max-width: 767.98px) {
+        .hero-card {
+          margin-top: 2rem;
+        }
+        .hero-labcap {
+          padding-top: 5rem;
+        }
+        .section-title {
+          font-size: 1.7rem;
+        }
+      }
+
+      /* Text selection highlight */
+      ::selection {
+        background: #fed7aa;
+        color: #111827;
+      }
+      ::-moz-selection {
+        background: #fed7aa;
+        color: #111827;
+      }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><span>AG</span> <span class="text-primary">Portfolio</span></a
+        >
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> <span class="ml-2">Menu</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link"><span>Overview</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#features-section" class="nav-link"><span>Product</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#flows-section" class="nav-link"><span>How It Works</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#benefits-section" class="nav-link"><span>For You</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#cta-section" class="nav-link"><span>Get Early Access</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home-section" class="hero hero-labcap labcap-gradient">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 ftco-animate" data-aos="fade-right">
+            <div class="mb-3">
+              <span class="badge-pill d-inline-flex align-items-center">
+                <span class="icon icon-rocket mr-2"></span> LabCap is now accepting pilot partners
+              </span>
+            </div>
+            <h1 class="mb-3" style="color: #111827;">
+              Fund research in
+              <span class="hero-highlight">weeks</span>,
+              not years.
+            </h1>
+            <p class="subheadline mb-4">
+              LabCap is a modern funding platform that lets research institutes and scientists
+              crowdfund credible projects, while giving funders transparent impact, updates and
+              ownership of the story.
+            </p>
+            <div class="d-flex flex-wrap align-items-center mb-4">
+              <a
+                href="mailto:anityagangurde01@gmail.com?subject=LabCap%20Early%20Access&body=Tell%20us%20about%20your%20lab%2C%20research%20focus%20or%20funding%20thesis..."
+                class="btn btn-primary btn-pill mr-3 mb-3 py-3 px-4 d-inline-flex align-items-center"
+              >
+                <span class="mr-2 icon icon-paper-plane"></span> Request early access
+              </a>
+              <a
+                href="mailto:anityagangurde01@gmail.com?subject=LabCap%20Early%20Access&body=Tell%20us%20about%20your%20lab%2C%20research%20focus%20or%20funding%20thesis..."
+                class="btn btn-glass btn-pill mb-3 py-3 px-4 d-inline-flex align-items-center"
+              >
+                <span class="mr-2 icon icon-play3"></span> View product tour
+              </a>
+            </div>
+            <p class="text-muted mb-1" style="font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase;">
+              Built for
+            </p>
+            <ul class="pill-list mb-0">
+              <li>University labs</li>
+              <li>Independent researchers</li>
+              <li>Science philanthropists</li>
+              <li>R&amp;D foundations</li>
+            </ul>
+            <div class="mt-4">
+              <p class="text-muted mb-2" style="font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase;">
+                Why this matters in India
+              </p>
+              <div class="row">
+                <div class="col-sm-4 mb-3">
+                  <p class="mb-1" style="font-size: 0.9rem; color: #111827;">
+                    Long grant cycles
+                  </p>
+                  <p class="text-muted mb-0" style="font-size: 0.8rem;">
+                    Researchers often wait months for traditional funding decisions before work can
+                    begin.
+                  </p>
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <p class="mb-1" style="font-size: 0.9rem; color: #111827;">
+                    Limited early-stage support
+                  </p>
+                  <p class="text-muted mb-0" style="font-size: 0.8rem;">
+                    Young labs and first-time PIs struggle to secure backing for bold, unproven ideas.
+                  </p>
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <p class="mb-1" style="font-size: 0.9rem; color: #111827;">
+                    Growing science-curious capital
+                  </p>
+                  <p class="text-muted mb-0" style="font-size: 0.8rem;">
+                    Individuals and organisations want to support Indian science but lack a clear,
+                    trustworthy way to do it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 ftco-animate" data-aos="fade-left">
+            <div class="hero-card">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <p class="text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 0.14em;">
+                    Sample LabCap campaign
+                  </p>
+                  <h5 class="mb-0" style="color: #111827;">Early detection of lung cancer in Tier‑2 cities</h5>
+                </div>
+                <span class="feature-tag">Verified lab</span>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="hero-progress-label">Funding progress</span>
+                  <span class="hero-progress-label" id="heroProgressLabel">0%</span>
+                </div>
+                <div class="progress" style="height: 6px; background: #e5e7eb;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    id="heroProgressBar"
+                    style="width: 0%; background-color: #22c55e;"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+                <div class="d-flex justify-content-between mt-2">
+                  <small class="text-muted">Goal: fund a pilot study across 3 district hospitals</small>
+                  <small class="text-muted">Status: raising from institutes and individual supporters</small>
+                </div>
+              </div>
+              <div class="mb-3">
+                <p class="text-muted mb-2" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;">
+                  Example research team
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex flex-wrap">
+                    <div class="d-flex align-items-center mr-3 mb-2">
+                      <img
+                        src="images/avatar.jpg"
+                        alt="Researcher avatar"
+                        class="rounded-circle"
+                        style="width: 32px; height: 32px; object-fit: cover;"
+                      />
+                      <div class="ml-2">
+                        <p class="mb-0" style="font-size: 0.85rem; color: #111827;">Dr A. Sharma</p>
+                        <small class="text-muted" style="font-size: 0.75rem;">Lead researcher</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mr-3 mb-2">
+                      <img
+                        src="images/person_4.jpg"
+                        alt="Researcher avatar"
+                        class="rounded-circle"
+                        style="width: 32px; height: 32px; object-fit: cover;"
+                      />
+                      <div class="ml-2">
+                        <p class="mb-0" style="font-size: 0.85rem; color: #111827;">Dr R. Iyer</p>
+                        <small class="text-muted" style="font-size: 0.75rem;">Clinical partner</small>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <img
+                        src="images/profile.png"
+                        alt="Researcher avatar"
+                        class="rounded-circle"
+                        style="width: 32px; height: 32px; object-fit: cover;"
+                      />
+                      <div class="ml-2">
+                        <p class="mb-0" style="font-size: 0.85rem; color: #111827;">LabCap supporter</p>
+                        <small class="text-muted" style="font-size: 0.75rem;">Diagnostic innovation</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="mb-2">
+                  <small class="text-muted">Identity and institute checks before any campaign goes live.</small>
+                </div>
+                <div class="mb-2">
+                  <small class="text-muted">No setup fee. A simple success fee only when you raise money.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT FEATURES -->
+    <section class="ftco-section" id="features-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">Product</p>
+            <h2 class="section-title">Everything you need to share and fund your work</h2>
+            <p class="section-subtitle">
+              LabCap helps you publish a clear, trustworthy project page, reach people who care about
+              your research, and receive funds in a simple and organised way.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-lock"></span>
+              </div>
+              <h3 class="text-dark mb-2">Verified researcher identities</h3>
+              <p class="text-muted mb-3">
+                LabCap checks basic details about institutes and independent scientists so that
+                visitors know who is behind each project.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> University &amp; lab level
+                  verification
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Public trust badges on campaigns
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Clear risk &amp; ethics
+                  disclosures
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-layout"></span>
+              </div>
+              <h3 class="text-dark mb-2">Project pages that tell your story</h3>
+              <p class="text-muted mb-3">
+                Turn complex science into simple blocks of information: what problem you are solving,
+                what you will do, and how funds will be used.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Problem–solution storytelling
+                  blocks
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Visuals: timelines, impact
+                  diagrams &amp; lab media
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Update feeds for backers
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-credit-card"></span>
+              </div>
+              <h3 class="text-dark mb-2">Simple contributions &amp; payouts</h3>
+              <p class="text-muted mb-3">
+                From a single page, people can contribute securely, and you receive funds in your
+                institute account in a clear, trackable way.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Transparent fees (0.5% success
+                  fee)
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Multiple local &amp; global
+                  payment options
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Automated receipts &amp; reports
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-search"></span>
+              </div>
+              <h3 class="text-dark mb-2">Easy way to discover projects</h3>
+              <p class="text-muted mb-3">
+                A home feed and search make it easy to find projects by topic, location or area of
+                impact, so your work is not lost in a long list.
+              </p>
+              <span class="feature-tag mb-0">For funders</span>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-graph"></span>
+              </div>
+              <h3 class="text-dark mb-2">Progress tracking</h3>
+              <p class="text-muted mb-3">
+                See how much has been raised, which milestones are complete, and what updates have
+                been shared from one simple dashboard.
+              </p>
+              <span class="feature-tag mb-0">For researchers</span>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="icon icon-globe"></span>
+              </div>
+              <h3 class="text-dark mb-2">Ready for growth</h3>
+              <p class="text-muted mb-3">
+                Start with one project and later bring more teams, more projects and more partners on
+                the same platform.
+              </p>
+              <span class="feature-tag mb-0">For institutes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOWS / HOW IT WORKS -->
+    <section class="ftco-section" id="flows-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">How it works</p>
+            <h2 class="section-title">Add your research in 3 simple steps</h2>
+            <p class="section-subtitle">
+              Start with the basics about your project, share it with your community, and keep
+              everyone updated as you move forward.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3-step overview -->
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4 ftco-animate" data-aos="fade-up">
+            <div class="feature-card step-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="step-card-number mr-2">1</div>
+                <span class="text-muted" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;">
+                  Describe
+                </span>
+              </div>
+              <h3 class="text-dark mb-2" style="font-size: 1.1rem;">Tell us what you’re working on</h3>
+              <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                Add a short title, one‑line summary, team and why this work matters, using plain
+                language.
+              </p>
+              <div class="step-progress">
+                <div class="step-progress-bar" data-step-target="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 ftco-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-card step-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="step-card-number mr-2">2</div>
+                <span class="text-muted" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;">
+                  Plan
+                </span>
+              </div>
+              <h3 class="text-dark mb-2" style="font-size: 1.1rem;">Share your plan and budget</h3>
+              <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                List key milestones, rough timelines and how funds will be used, so people see how
+                their support helps.
+              </p>
+              <div class="step-progress">
+                <div class="step-progress-bar" data-step-target="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 ftco-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card step-card h-100">
+              <div class="d-flex align-items-center mb-3">
+                <div class="step-card-number mr-2">3</div>
+                <span class="text-muted" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;">
+                  Share
+                </span>
+              </div>
+              <h3 class="text-dark mb-2" style="font-size: 1.1rem;">Publish and keep people updated</h3>
+              <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                Share your project link, track support, and post quick updates so your community
+                feels close to the work.
+              </p>
+              <div class="step-progress">
+                <div class="step-progress-bar" data-step-target="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deeper flows by persona -->
+        <div class="row align-items-start mb-5">
+          <div class="col-md-6 mb-4 ftco-animate">
+            <h3 class="text-dark mb-3">For research institutes &amp; labs</h3>
+            <div class="step">
+              <div class="step-index">1</div>
+              <div>
+                <h5 class="text-dark mb-1">Create your verified lab profile</h5>
+                <p class="text-muted mb-0">
+                  Share basic information about your institute or centre once. This becomes the base
+                  for all future projects from your teams.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">2</div>
+              <div>
+                <h5 class="text-dark mb-1">Launch a campaign in days</h5>
+                <p class="text-muted mb-0">
+                  Use simple prompts to describe the problem, approach, budget and milestones – and
+                  preview how your page will look before it is visible to others.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">3</div>
+              <div>
+                <h5 class="text-dark mb-1">Share, track, withdraw</h5>
+                <p class="text-muted mb-0">
+                  Share one link with your community, track contributions, and export reports that
+                  your finance team and leadership can use.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 ftco-animate">
+            <h3 class="text-dark mb-3">For individual researchers &amp; supporters</h3>
+            <div class="step">
+              <div class="step-index">1</div>
+              <div>
+                <h5 class="text-dark mb-1">Researchers: tell your story</h5>
+                <p class="text-muted mb-0">
+                  Break down your work into clear goals and steps. Connect it to your institute’s
+                  page or act as a verified independent. Add key papers or earlier work so visitors
+                  see your background.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">2</div>
+              <div>
+                <h5 class="text-dark mb-1">Funders: discover &amp; pledge</h5>
+                <p class="text-muted mb-0">
+                  Browse projects by topic, city or type of impact and support them in a few clicks,
+                  with clear information on what your support helps to do.
+                </p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-index">3</div>
+              <div>
+                <h5 class="text-dark mb-1">Stay close to the science</h5>
+                <p class="text-muted mb-0">
+                  Receive short updates and outcomes directly from the team, so you can follow how a
+                  project moves from idea to results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-md-12 ftco-animate">
+            <div class="feature-card">
+              <p class="feature-tag mb-2">Release milestone</p>
+              <h3 class="text-dark mb-2">What is coming next</h3>
+              <p class="text-muted mb-3">
+                LabCap is being built with a small circle of Indian research teams, supporters and
+                builders. If you are an investor, researcher or potential co‑founder who cares about
+                science funding, this is a good time to reach out.
+              </p>
+              <div class="row" style="font-size: 0.9rem;">
+                <div class="col-md-4 mb-3">
+                  <p class="text-dark mb-1">Now</p>
+                  <p class="text-muted mb-0">
+                    Refining core flows (verification, campaign creation, pledges) with early
+                    research partners.
+                  </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <p class="text-dark mb-1">Upcoming release</p>
+                  <p class="text-muted mb-0">
+                    Closed pilot with a small set of Indian institutes and independent researchers to
+                    validate UX and trust model.
+                  </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <p class="text-dark mb-1">After that</p>
+                  <p class="text-muted mb-0">
+                    Open applications for more labs, structured investor syndicates and mission‑driven
+                    donors to join the platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BENEFITS BY PERSONA -->
+    <section class="ftco-section" id="benefits-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">Why LabCap</p>
+            <h2 class="section-title">Why different people use LabCap</h2>
+            <p class="section-subtitle">
+              Whether you’re running a lab, fighting for your first independent grant, or funding
+              science from the outside – LabCap was built to remove friction for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <p class="feature-tag mb-2">Research institute</p>
+              <h3 class="text-dark mb-2">Turn your lab into a magnet for capital</h3>
+              <p class="text-muted mb-3">
+                Move from reactive grant cycles to proactive, always-on funding funnels.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Dedicated institute profile
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Portfolio view across all
+                  campaigns
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Reports for boards &amp; donors
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <p class="feature-tag mb-2">Individual researcher</p>
+              <h3 class="text-dark mb-2">Own your project’s narrative</h3>
+              <p class="text-muted mb-3">
+                Give your idea a dedicated home to attract capital, collaborators and talent.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Personal profile &amp; track
+                  record
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Flexible campaign goals &amp;
+                  timelines
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Direct channel to your community
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card">
+              <p class="feature-tag mb-2">Supporter</p>
+              <h3 class="text-dark mb-2">See exactly what your money unlocks</h3>
+              <p class="text-muted mb-3">
+                Support specific hypotheses, timelines and outcomes – with updates that feel like
+                being in the room.
+              </p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Domain &amp; cause based filters
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Impact summaries in human
+                  language
+                </li>
+                <li class="mb-1">
+                  <span class="icon-check mr-2 text-success"></span> Portfolio of all projects you
+                  support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPAIGN TEMPLATE SHOWCASE -->
+    <section class="ftco-section" id="template-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">For researchers</p>
+            <h2 class="section-title">What your LabCap project page can look like</h2>
+            <p class="section-subtitle">
+              A clean, structured page that shows who you are, what you are working on, and how
+              people can help. Below is a simple example of how a project can appear on LabCap.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 ftco-animate" data-aos="fade-up">
+            <div class="hero-card">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <p class="text-uppercase mb-1" style="font-size: 0.75rem; letter-spacing: 0.14em;">
+                    Project example
+                  </p>
+                  <h5 class="mb-0" style="color: #111827;">
+                    Community‑based screening for air‑pollution related lung disease
+                  </h5>
+                </div>
+                <span class="feature-tag">Health &amp; diagnostics</span>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <span class="hero-progress-label">Funding goal</span>
+                  <span class="hero-progress-label">In progress</span>
+                </div>
+                <div class="progress" style="height: 6px; background: #e5e7eb;">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 45%; background-color: #22c55e;"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="row mb-3" style="font-size: 0.9rem;">
+                <div class="col-md-4 mb-2">
+                  <p class="mb-1" style="color: #111827;">Problem</p>
+                  <p class="text-muted mb-0">
+                    Many people in Tier‑2 cities are exposed to high air pollution without regular
+                    screening.
+                  </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <p class="mb-1" style="color: #111827;">Plan</p>
+                  <p class="text-muted mb-0">
+                    Set up low‑cost screening camps and collect data to improve early detection.
+                  </p>
+                </div>
+                <div class="col-md-4 mb-2">
+                  <p class="mb-1" style="color: #111827;">Use of funds</p>
+                  <p class="text-muted mb-0">
+                    Equip camps, pay field staff, and analyse collected data.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <div class="mb-2">
+                  <small class="text-muted">Clear sections for problem, plan, team and updates.</small>
+                </div>
+                <div class="mb-2">
+                  <small class="text-muted">You write the content. LabCap makes it easy to read.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT RESEARCHERS & FUNDERS SEE -->
+    <section class="ftco-section" id="views-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">On the screen</p>
+            <h2 class="section-title">What each side actually sees</h2>
+            <p class="section-subtitle">
+              A clean card for the project, with a few simple pieces of information. Researchers see
+              what to fill in; funders see what matters most before they decide to support.
+            </p>
+          </div>
+        </div>
+
+        <!-- Researcher view -->
+        <div class="row align-items-center mb-4 ftco-animate">
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+            <div class="hero-card">
+              <div class="mb-2">
+                <span class="feature-tag">Researcher view</span>
+              </div>
+              <h5 class="mb-1" style="color: #111827;">Project card preview</h5>
+              <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                This is how your project can look on LabCap once you fill in the details.
+              </p>
+              <div class="mb-2">
+                <p class="mb-0" style="color: #111827; font-weight: 600;">
+                  Short, clear title about your work
+                </p>
+                <p class="text-muted mb-0" style="font-size: 0.85rem;">
+                  Example: “Improving air‑quality screening in Tier‑2 Indian cities”
+                </p>
+              </div>
+              <hr />
+              <div class="row" style="font-size: 0.85rem;">
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">One‑line summary</p>
+                  <p class="text-muted mb-0">
+                    A single line in simple language that explains what you want to do.
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Team</p>
+                  <p class="text-muted mb-0">
+                    Key people on the project (you can add 2–3 names and roles).
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Use of funds</p>
+                  <p class="text-muted mb-0">
+                    A short list of where the money will go (equipment, field work, analysis, etc.).
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Timeline</p>
+                  <p class="text-muted mb-0">
+                    When you expect to start, reach key milestones, and share first results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <h3 class="text-dark mb-3">What you can include as a researcher</h3>
+            <p class="text-muted mb-3">
+              Think of your LabCap project card as the front of your project. It should be easy to
+              scan in less than a minute and make someone say “I get what this is about.”
+            </p>
+            <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>A short, plain‑language title that
+                avoids heavy jargon.
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>A one‑sentence description that
+                explains the core idea and why it matters.
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>Names and roles of key team members,
+                so visitors know who is behind the work.
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>A simple breakdown of how funds will
+                be used and what milestones you plan to hit.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Funder view -->
+        <div class="row align-items-center ftco-animate flex-md-row-reverse">
+          <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-left">
+            <div class="hero-card">
+              <div class="mb-2">
+                <span class="feature-tag">Supporter view</span>
+              </div>
+              <h5 class="mb-1" style="color: #111827;">What someone sees before funding</h5>
+              <p class="text-muted mb-3" style="font-size: 0.9rem;">
+                When a potential supporter opens your project, they see a clear snapshot first, with
+                deeper details only a scroll away.
+              </p>
+              <div class="mb-2 d-flex justify-content-between align-items-center">
+                <p class="mb-0" style="color: #111827; font-weight: 600;">Goal and days left</p>
+                <span class="hero-progress-label">e.g. 30 days left · ₹X goal</span>
+              </div>
+              <div class="progress mb-3" style="height: 6px; background: #e5e7eb;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 45%; background-color: #22c55e;"
+                  aria-valuenow="45"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="row" style="font-size: 0.85rem;">
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Impact in one line</p>
+                  <p class="text-muted mb-0">
+                    A short impact statement that answers “What changes if this works?”
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Trust signals</p>
+                  <p class="text-muted mb-0">
+                    Verified institute, team, and any key partners or previous work.
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Where funds go</p>
+                  <p class="text-muted mb-0">
+                    A short list that shows how their support will be used in practice.
+                  </p>
+                </div>
+                <div class="col-6 mb-2">
+                  <p class="mb-1" style="color: #111827; font-weight: 500;">Updates</p>
+                  <p class="text-muted mb-0">
+                    A space for you to post quick updates as the project moves forward.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-right">
+            <h3 class="text-dark mb-3">What a funder or supporter looks for</h3>
+            <p class="text-muted mb-3">
+              Most people skim the first screen before deciding whether to scroll further or support.
+              Your project card is there to answer a few simple questions clearly.
+            </p>
+            <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>What is this project about and who
+                is behind it?
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>How will their money be used and
+                what could it unlock?
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>How long will the project run and
+                when will they hear back?
+              </li>
+              <li class="mb-2">
+                <span class="icon-check mr-2 text-success"></span>Are there clear signs that the team
+                and institute are credible?
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING / TIERS -->
+    <section class="ftco-section" id="pricing-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-9 text-center ftco-animate">
+            <p class="section-label">Pricing</p>
+            <h2 class="section-title text-dark">Simple tiers for every type of partner</h2>
+            <p class="section-subtitle">
+              Start with a free profile, then unlock deeper tooling whether you are a research team or
+              a capital partner. All tiers are designed to keep the focus on science, not complexity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Free tier -->
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card h-100">
+              <p class="feature-tag mb-2">Free</p>
+              <h3 class="text-dark mb-1">LabCap Essentials</h3>
+              <p class="text-muted mb-2" style="font-size: 0.9rem;">For anyone exploring LabCap.</p>
+              <p class="mb-3" style="font-size: 1.4rem; font-weight: 600;">₹0</p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Create a basic profile (researcher or funder)
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Follow projects and save favourites
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Receive public updates on campaigns
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Researcher tier -->
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card h-100" style="border-color: rgba(248,171,95,0.9); box-shadow: 0 16px 40px rgba(248,171,95,0.25);">
+              <p class="feature-tag mb-2">For researchers</p>
+              <h3 class="text-dark mb-1">LabCap Research</h3>
+              <p class="text-muted mb-2" style="font-size: 0.9rem;">For institutes and independent PIs.</p>
+              <p class="mb-3" style="font-size: 1.4rem; font-weight: 600;">Contact us</p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Verified lab / institute profiles
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Guided campaign creation &amp; review
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Milestone tracking &amp; update tools
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Reporting exports for finance and boards
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Funder tier -->
+          <div class="col-md-4 mb-4 ftco-animate">
+            <div class="feature-card h-100">
+              <p class="feature-tag mb-2">For funders</p>
+              <h3 class="text-dark mb-1">LabCap Capital</h3>
+              <p class="text-muted mb-2" style="font-size: 0.9rem;">For investors, donors and foundations.</p>
+              <p class="mb-3" style="font-size: 1.4rem; font-weight: 600;">Contact us</p>
+              <ul class="list-unstyled mb-0 text-muted" style="font-size: 0.9rem;">
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Curated deal flow by domain &amp; geography
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Portfolio view of supported projects
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Tools to co‑fund and invite your network
+                </li>
+                <li class="mb-2">
+                  <span class="icon-check mr-2 text-success"></span>Custom reporting and engagement support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / EARLY ACCESS -->
+    <section class="ftco-section ftco-hireme img" id="cta-section">
+      <div class="container">
+        <div class="cta-band ftco-animate">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <p class="section-label mb-1">Early access</p>
+              <h2 class="text-white mb-3">
+                Be one of the first labs, researchers or funders on LabCap.
+              </h2>
+              <p class="text-muted mb-0">
+                We are onboarding a small number of research institutes, independent scientists and
+                funding partners for our private beta. Share a few details and we’ll reach out with a
+                tailored walkthrough.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <div class="d-flex flex-column flex-md-row justify-content-lg-end">
+                <a
+                  href="mailto:anityagangurde01@gmail.com?subject=LabCap%20Early%20Access&body=Tell%20us%20about%20your%20lab%2C%20research%20focus%20or%20funding%20thesis..."
+                  class="btn btn-primary btn-pill mb-3 mb-md-0 mr-md-3 py-3 px-4"
+                >
+                  Email for a demo
+                </a>
+                <a
+                  href="mailto:anityagangurde01@gmail.com?subject=LabCap%20Early%20Access&body=Tell%20us%20about%20your%20lab%2C%20research%20focus%20or%20funding%20thesis..."
+                  class="btn btn-glass btn-pill py-3 px-4 d-flex align-items-center justify-content-center"
+                >
+                  View product case study
+                </a>
+              </div>
+              <p class="text-muted mt-3 mb-0" style="font-size: 0.8rem;">
+                Prefer a quick skim? Scroll up for the product overview, or reach out and we’ll share
+                a Figma prototype plus roadmap.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (reuse research page footer) -->
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>
+                LabCap is being built by Anitya Gangurde to make scientific funding more transparent,
+                collaborative and global, starting with India.
+              </p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate">
+                  <a href="https://www.linkedin.com/in/anityagan9urde/"
+                    ><span class="icon-linkedin"></span
+                  ></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="https://anityagan9urde.medium.com"
+                    ><span class="icon-medium"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html"
+                    ><span class="icon-long-arrow-right mr-2"></span>Home</a
+                  >
+                </li>
+                <li>
+                  <a href="portfolio.html"
+                    ><span class="icon-long-arrow-right mr-2"></span>Product work</a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><span class="icon-long-arrow-right mr-2"></span>Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Have questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li>
+                    <span class="icon icon-map-marker"></span
+                    ><span class="text">Nashik, Maharashtra, India</span>
+                  </li>
+                  <li>
+                    <span class="icon icon-phone"></span
+                    ><span class="text">+91 91450 23678</span>
+                  </li>
+                  <li>
+                    <a href="mailto:anityagangurde01@gmail.com"
+                      ><span class="icon icon-envelope"></span
+                      ><span class="text">anityagangurde01@gmail.com</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+              All rights reserved | This template is based on Colorlib and customised for LabCap.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts (reuse research page stack) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Simple hero progress animation on load
+      (function () {
+        // Hero card progress
+        var bar = document.getElementById('heroProgressBar');
+        var label = document.getElementById('heroProgressLabel');
+        if (bar && label) {
+          var current = 0;
+          var target = 60;
+          var step = 1;
+          var interval = setInterval(function () {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(interval);
+            }
+            bar.style.width = current + '%';
+            bar.setAttribute('aria-valuenow', current);
+            label.textContent = current + '%';
+          }, 25);
+        }
+
+        // Three-step cards progress bars
+        var stepBars = document.querySelectorAll('.step-progress-bar');
+        if (stepBars.length) {
+          stepBars.forEach(function (el, index) {
+            var progress = 0;
+            var delay = 300 * index;
+            var max = parseInt(el.getAttribute('data-step-target') || '100', 10);
+            setTimeout(function () {
+              var id = setInterval(function () {
+                progress += 4;
+                if (progress >= max) {
+                  progress = max;
+                  clearInterval(id);
+                }
+                el.style.width = progress + '%';
+              }, 25);
+            }, delay);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
+
+
